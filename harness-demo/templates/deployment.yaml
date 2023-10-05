@@ -1,4 +1,4 @@
-{{ - if .Values.env.config }}
+{{- if .Values.env.config }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -8,7 +8,7 @@ data:
 ---
 {{- end }}
 
-{{ - if .Values.env.secrets }}
+{{- if .Values.env.secrets }}
 apiVersion: v1
 kind: Secret
 metadata:
