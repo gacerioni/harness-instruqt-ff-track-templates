@@ -14,7 +14,7 @@ image:
 imagePullSecrets: []
 fullnameOverride: ""
 
-nameOverride: <+service.name>
+nameOverride: "harness-ff-demo"
 
 podAnnotations:
   prometheus.io/scrape: 'true'
