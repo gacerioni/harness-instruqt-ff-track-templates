@@ -1,4 +1,4 @@
-#{{- if .Values.env.config}}
+{{- if .Values.env.config}}
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -6,7 +6,7 @@ metadata:
 data:
 {{ .Values.env.config | toYaml | indent 2 }}
 ---
-#{{- end}}
+{{- end}}
 
 {{- if .Values.env.secrets}}
 apiVersion: v1
